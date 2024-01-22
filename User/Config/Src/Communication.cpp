@@ -117,11 +117,6 @@ void UserCAN1DataUpdate(CANx_Message* CANx_RxMsg)
  */
 void UserCAN2DataUpdate(CANx_Message* CANx_RxMsg)
 {
-    if(CANx_RxMsg->ID == 0x312)
-    {
-        boardInteract.receive(CANx_RxMsg->Data);
-    }
-
     switch (CANx_RxMsg->ID - 0x205)
     {
     case 0:
