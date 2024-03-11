@@ -14,8 +14,8 @@ void Chassis::MotorSetInit(void) //要改！！！！
         SteeringMotor[i].Speed.Set(30.0f, 0.0f, 2.0f, 20000.0f, 2500.0f, 2500.0f, 200000.0f);
 
         DriveMotor[i].motorType = Motor_t::M3508;
-        DriveMotor[i].Speed.Set(20.0f, 0.0f, 0.0f, 15000.0f, 0.0f, 15000.0f, 15000.0f);
-        DriveMotor[i].Current.Set(1.0f, 0.0f, 0.5f, 15000.0f, 0.0f, 10000.0f, 15000.0f);
+        DriveMotor[i].Speed.Set(20.0f, 0.0f, 0.0f, 15000.0f, 0.0f, 15000.0f, 16384.0f);
+        DriveMotor[i].Current.Set(1.0f, 0.0f, 0.5f, 15000.0f, 0.0f, 10000.0f, 16384.0f);
     }
 }
 

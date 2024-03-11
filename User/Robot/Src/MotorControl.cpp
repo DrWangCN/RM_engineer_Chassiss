@@ -48,9 +48,9 @@ void MotorSendData(void)
                         SteeringMotor[AVG_RB].Speed.output);
                         //转向电机控制
 
-    CANx_PackProcess_Data(&hcan1, 0x200, 0x08, DriveMotor[AVG_LF].Current.output, 
-                        DriveMotor[AVG_RF].Current.output, 
-                        DriveMotor[AVG_LB].Current.output, 
-                        DriveMotor[AVG_RB].Current.output);   
+    CANx_PackProcess_Data(&hcan1, 0x200, 0x08, DriveMotor[AVG_LF].Speed.output, 
+                        DriveMotor[AVG_RF].Speed.output, 
+                        DriveMotor[AVG_LB].Speed.output, 
+                        DriveMotor[AVG_RB].Speed.output);   
                         //驱动电机控制
 }
